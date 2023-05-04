@@ -1,0 +1,9 @@
+name = "HwAllocator"
+uuid = "19a61fc7-6e8e-4b4d-b138-dadc1942ce65"
+authors = ["Your Name <you@example.com>"]
+version = "1.0.1"
+
+[deps]
+CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
