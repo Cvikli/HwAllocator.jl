@@ -90,7 +90,7 @@ printit(ops_l3, ops_l2, ops_l1, ops_lv) = begin
   end
 end
 toidx(offset) = Int(offset /1000 + 1)
-printitdirected_dict(nops_l1g, nops_l2g, nops_lvg, ops_l1g, ops_l2g, ops_l3g, ops_lvg; forward=true; ssym=["∑", "o", "∏", "σ", "⋌", "∠","∇", "-","e", "®"] ) = begin # TODO new package... for Vector of... decode! Also in_bfs could go there
+printitdirected_dict(nops_l1g, nops_l2g, nops_lvg, ops_l1g, ops_l2g, ops_l3g, ops_lvg; forward=true, ssym=["∑", "o", "∏", "σ", "⋌", "∠","∇", "-","e", "®"] ) = begin # TODO new package... for Vector of... decode! Also in_bfs could go there
 	mv2hw = arr -> move2hw(arr, Val(:CPU))
 	nops_l2, nops_l1, nops_lv, ops_l3, ops_l2, ops_l1, ops_lv = mv2hw(nops_l2g), mv2hw(nops_l1g), mv2hw(nops_lvg), mv2hw(ops_l3g), mv2hw(ops_l2g), mv2hw(ops_l1g), mv2hw(ops_lvg)
 	tmp_dict = Dict()
